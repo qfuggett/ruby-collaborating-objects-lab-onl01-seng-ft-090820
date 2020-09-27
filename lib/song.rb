@@ -23,7 +23,7 @@ class Song
   
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
-    #assigning an artist object either new or existing, to a given song's artist attribute
+    #assigning an artist object (either new or existing because of .find_or_create_by_name, to a given song's artist attribute
   end
   
   
